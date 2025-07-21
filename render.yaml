@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: logistic_lag_autocorr_patterns_app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run logistic_lag_autocorr_patterns_app.py --server.port 8080 --server.enableCORS false
