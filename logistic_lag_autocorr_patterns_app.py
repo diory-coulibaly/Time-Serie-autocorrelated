@@ -19,6 +19,11 @@ import statsmodels.api as sm
 st.set_page_config(page_title="GOOG Lag Prediction", layout="wide")
 st.title("📈 GOOG Lag Prediction with Time Series Insights")
 
+# 📷 Quick preview of expected CSV format
+from PIL import Image
+image = Image.open("Goog.JPG")
+st.image(image, caption="CSV Format: Stocks, SP500", use_container_width=True, output_format="JPEG")
+
 with st.sidebar:
     st.header("1. Upload Files")
     goog_file = st.file_uploader("GOOG CSV (semicolon-separated)", type="csv")
